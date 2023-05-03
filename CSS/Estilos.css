@@ -1,0 +1,935 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Bangers&family=Bebas+Neue&family=Boogaloo&family=Kalam:wght@300&family=Raleway:wght@300&family=Rubik+Moonrocks&display=swap');
+body{
+    /* background-color:#F7C04A; */
+    background-color: rgb(78,119,129);
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior:smooth; /*Para que el scroll sea mas suave*/
+}
+/* =============================SECCION HEADER donde estan mis enlaces o menu========== */
+
+header{
+    position: fixed;    /**para q el menu este fijo**/
+    right: 0; /**posicionamos el menu en la posicion derecha en 0**/
+    top: 0;/**posicionamos el menu en la posicion arriba en 0**/
+    left: 0;/**posicionamos el menu en la posicion izquierda en 0**/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(78,119,129);
+    /* background: linear-gradient(90deg,#c89116, #dbb970, #fce7bf) ;
+    z-index: 100; */
+}
+header .Nav-Logo img{
+    width: 150px;
+    padding-left: 10px;
+}
+header .Nav-Menu a{
+    text-decoration: none;
+    font-family: 'Boogaloo', cursive;
+    color: #F8F5E4;
+    text-align: justify;
+    text-transform:uppercase;
+    margin-right: 10px;
+    padding-left: 30px;
+    padding: 4px;
+    font-size: 22px;
+    top: -4px;
+}
+header .Nav-Menu .Metodos-De-Pago{
+    color: #F8F5E4;
+    border-radius: 10px;
+
+}
+header .Nav-Menu a:hover{
+    color: #f5cc45;
+    transition: .1s;
+}
+ header .Nav-Menu .Metodos-De-Pago:hover{
+    /* color: #55a355; */
+    color: #7effa3;
+    border: solid #6fcd6f;
+    font-size: 21px;
+}
+/* =============================SECCION HEADER donde estan mis enlaces o menu========== */
+
+/* =============================SECCION MAIN donde estan mis secciones (DESCRIPCION)========== */
+.main{
+    margin-top: 5rem;
+}
+.main section {/**Para que todas las secciones esten devajo del encabezado (barra de navegacion)**/
+    scroll-margin-top: 128px;
+    color: #F8F5E4;
+}
+.main .Descripcion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5rem;
+    background: rgb(78,119,129);
+    background: linear-gradient(90deg, rgba(78,119,129,1) 0%, rgba(112,184,184,1) 53%, rgba(248,245,228,1) 96%);
+}
+.main .Descripcion .descrip-text{
+    width: 400px;
+}
+.main .Descripcion .descrip-text h1{
+    width: 550px;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.main .Descripcion .descrip-text p{
+    width: 400px;
+    margin-top: -10px;
+    padding-left: 50px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 25px;
+}
+.main .Descripcion .descrip-img {
+    margin-left: 5rem;
+}
+.main .Descripcion .descrip-img img{
+    margin-top: 5rem;
+}
+.main .Descripcion .descrip-img p{
+    width: 400px;
+    display: flex;
+    flex-wrap:wrap;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color: #4E6E81;
+}
+.main .Descripcion .descrip-img strong{
+    font-family: 'Raleway', sans-serif;
+}
+.main .descrip-img .InicioSesion{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Boogaloo', cursive;
+    text-transform: uppercase;
+    color: #4E6E81;
+    padding: 4px;
+    font-size: 28px;
+    background-color: #4db3f2;
+    /* background-color: #f5cc45; */
+    color: #F8F5E4;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.main .descrip-img .InicioSesion:hover{
+    font-size: 32px;
+    border-top-style: none ;
+    border-bottom-style: none ;
+    transition: .3s;
+    color: #f5cc45;
+}
+/* =============================SECCION MAIN donde estan mis secciones (DESCRIPCION)========== */
+
+
+/* =============================SECCION MAIN donde estan mis secciones (SERVICICIOS)========== */
+.Servicios{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #70b8b8;
+    padding-top: 30px;
+
+}
+#Servicios h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
+#Servicios .Contenedor-card{
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+#Servicios .Contenedor-card .card{
+    width: 280px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(184deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);    margin: 10px 4px;
+    box-shadow: 0px 15px 30px #00000032 ;
+    transition: .5s;
+}
+#Servicios .Contenedor-card .card i{
+    margin: 20px;
+    font-size: 60px;
+}
+
+#Servicios .Contenedor-card .card:hover {
+    transform:scale(1.1);
+    transition: .3s;
+    box-shadow: 0px -1px 20px #F8F5E4 ;
+}
+
+/* =============================SECCION MAIN donde estan mis secciones (SERVICICIOS)========== */
+
+/* =============================SECCION MAIN donde estan mis secciones (PRODUCTOS)========== */
+
+#Productos{
+    background-color: #F8F5E4;
+    color: #4E6E81;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+#Productos h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
+#Productos .product-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#Productos .product-card .card{
+    background-color: #f5cc45;
+    width: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    transition: .5s;
+    font-family: 'Kalam', cursive;
+    cursor: pointer;
+}
+#Productos .product-card .card:hover{
+    background-color: #023047;    
+    color: #4db3f2;
+}
+#Productos .product-card .card h2{
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
+}
+#Productos .product-card .card span{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 22px;
+    border-bottom: solid #ddf2ff;
+}
+
+
+/* =============================SECCION MAIN donde estan mis secciones (PRODUCTOS)========== */
+
+/* =============================SECCION MAIN donde estan mis secciones (BLOG)========== */
+
+#Blog{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background: rgb(248,245,228);
+    background: linear-gradient(180deg, rgba(248,245,228,1) 0%, rgba(200,207,197,1) 7%, rgba(170,183,178,1) 13%, rgba(136,156,156,1) 20%, rgba(120,143,146,1) 25%, rgba(81,111,121,1) 48%, rgba(79,109,120,1) 51%, rgba(78,108,119,1) 54%, rgba(77,108,119,1) 57%, rgba(77,108,119,1) 61%, rgba(76,107,118,1) 66%, rgba(76,107,118,1) 68%, rgba(109,134,139,1) 76%, rgba(151,168,166,1) 85%, rgba(183,194,187,1) 90%, rgba(196,204,195,1) 92%, rgba(248,245,228,1) 100%);    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+#Blog h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    color: #023047;
+}
+/* Informacion */
+#Blog .Blog-Desc .desc{
+    font-family: 'Raleway', sans-serif;
+    column-count: 2;
+}
+#Blog .Blog-Desc .desc .desc-img img{
+    width: 450px;
+    transition: .7s;
+}
+#Blog .Blog-Desc .desc .desc-img img:hover{
+    transform: scale(1.1);
+}
+#Blog .Blog-Desc .desc .desc-txt h1{
+    font-family: 'Kalam', cursive;
+    font-size: 3rem;
+    text-align: justify;
+}
+#Blog .Blog-Desc .desc .desc-txt p{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-top: -40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #4db3f25c;
+    border-radius: 10px;
+}
+/* Vision y Mision */
+#Blog .mision-vision{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+#Blog .mision-vision P{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/* Cartas */
+
+#Blog .Blog-Conten .blog-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#Blog .Blog-Conten .blog-card .card {
+    width: 300px;
+    border-radius: 15px;
+    transition: .8s;
+}
+#Blog .Blog-Conten .blog-card .card:hover{
+    background-color: #ddf2ff;
+    color: #023047;
+}
+#Blog .Blog-Conten .blog-card .card img {
+    width: 100%;  
+    border-radius: 15px;
+}
+
+#Blog .Blog-Conten .blog-card .card span {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: lighter;
+    color: #e69740;
+    text-align: justify;
+}
+#Blog .Blog-Conten .blog-card .card h2 {
+    text-align: justify;
+    font-family: 'Averia Sans Libre', cursive;
+    margin-top: -2px;
+    padding: 5px;
+}
+#Blog .Blog-Conten .blog-card .card p{
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    margin-top: -15px;
+    padding: 5px;
+}
+#Blog .Blog-Conten .blog-card .card .requisito{
+    color: #4E6E81;
+    background-color: #ddf2ff;
+    border-radius: 5px;
+    padding: 2px;
+}
+#Blog .Blog-Conten .blog-card .card ul{
+    text-align: justify;
+    margin-top: -15px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding-right: 5px;
+}
+
+
+
+/* Galeria */
+#Galeria{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#Galeria h1{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    color: #F8F5E4;
+}
+
+.img-gallery img{
+    width: 30%;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px 1px rgba(97,97,97,0.3);
+    transition: .5s;
+
+}
+.img-gallery img:hover{
+    transform: scale(1.1);
+    transition: .1s;
+}
+.ful-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transition: .3s;
+}
+.ful-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Finger Paint', cursive;
+    font-size: 30px;
+}
+.ful-img img{
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+
+}
+
+/* =============================SECCION MAIN donde estan mis secciones (BLOG)========== */
+
+
+
+/* =============================SECCION MAIN donde estan mis secciones (ACERCA DE)========== */
+#Acerca-De{
+    text-align: center;
+    background-color: #F8F5E4;
+    color: #4E6E81;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-image: url(../Recursos/Img/Fondos-Texto/bg-2.svg);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#Acerca-De h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    color: #4E6E81;
+} 
+  #Acerca-De .Acerca-Conten .foto img {
+    /* border: 5px solid  #5a5a5a99; */
+    box-shadow: 5px 5px 20px #4db3f2b0;
+    border-radius: 70%;
+    transition: .5s;
+  }
+
+  #Acerca-De .Acerca-Conten .foto img:hover {
+    transform: scale(1.1);
+  }
+  
+  #Acerca-De .Acerca-Conten .informacion {
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 80%;
+    line-height: 1.8rem;
+
+    margin-left: 10%;
+  }
+  
+  #Acerca-De .Acerca-Conten .informacion .titulo {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #e69740;
+  }
+  
+  #Acerca-De .informacion .bold {
+    color: #e69740;
+    text-decoration: underline;
+  }
+
+/* FORMULARIO */
+
+#Acerca-De .formulario .contenedor .formulario{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 15rem ;
+    margin-right: 15rem ;
+    gap: 10px;
+}
+#Acerca-De .formulario .contenedor h3{
+    color: #4E6E81;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 22px;
+}
+#Acerca-De .formulario .contenedor .formulario input{
+    padding: 10px;
+    border-radius: 10PX;
+    border: 2px solid #f5cc45;
+    color: #4E6E81;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 18px;
+    transition: 0.3s;
+}
+#Acerca-De .formulario .contenedor .formulario input:hover{
+    background-color: #4e6e8176;
+    color: #fff;
+    transition: .2s;
+}
+#Acerca-De .formulario .contenedor .formulario input:nth-child(4){
+    padding-bottom: 50px;
+}
+#Acerca-De .formulario .contenedor .formulario .boton{
+    background-color: #4db3f2;
+    border: solid #4E6E81;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 22px;
+    cursor: pointer;
+}
+#Acerca-De .formulario .contenedor .formulario .boton:hover{
+    background-color: #F8F5E4;
+    border: solid #4E6E81;
+    color: #4E6E81;
+    transition: .3s;
+}
+
+/* =============================SECCION MAIN donde estan mis secciones (ACERCA DE)========== */
+
+/* =============================SECCION MAIN donde estan mis secciones (REGISTRATE)========== */
+
+#InicioSesion{
+    background-color: #70b8b8;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+#InicioSesion h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+#InicioSesion form{
+    background-color: #023047;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin-left: 39%;
+    padding-bottom: 10px;
+}
+#InicioSesion i{
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#InicioSesion input{
+padding: 10px;
+margin: 10px;
+border-radius: 10PX;
+border: 2px solid #4db3f2;
+color: #4E6E81;
+font-family: 'Major Mono Display', monospace;
+font-size: 18px;
+transition: 0.3s;
+}
+#InicioSesion input:hover{
+background-color: #4e6e8176;
+color: #fff;
+transition: .2s;
+}
+#InicioSesion .boton{
+    background-color: #f36161;
+    border: solid #F8F5E4;
+    color: #F8F5E4;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 22px;
+    cursor: pointer;
+}
+#InicioSesion .boton:hover{
+    background-color: #4E6E81;
+    border: solid #7effa3;
+    color: #F8F5E4;
+    transition: .3s;
+}
+#InicioSesion p{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+/* =============================SECCION MAIN donde estan mis secciones (REGISTRATE)========== */
+
+/* =============================SECCION MAIN donde estan mis secciones (INICIO SESION)========== */
+
+#Metodos-De-Pago{
+    background: rgb(112,184,184);
+    background: linear-gradient(184deg, 
+    rgba(112,184,184,1) 5%, 
+    rgba(115,199,180,1) 15%, 
+    rgba(117,212,176,1) 25%, 
+    rgba(122,236,169,1) 36%, 
+    rgba(126,255,163,1) 50%, 
+    rgba(155,255,184,1) 59%, 
+    rgba(184,255,204,1) 68%, 
+    rgba(194,255,211,1) 75%, 
+    rgba(206,255,220,1) 81%, 
+    rgba(255,255,255,1) 100%);
+    color: #F8F5E4;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+#Metodos-De-Pago h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    color: #F8F5E4;
+}
+#Metodos-De-Pago .contenedor .descrip{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #023047;
+    font-size: large;
+    background-color: #f5cc45;
+    border-radius: 10px;
+}
+#Metodos-De-Pago .contenedor .contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  
+} 
+  /* estilos de la card */
+  #Metodos-De-Pago .contenedor .contenedor-tarjetas .card {
+    width: 200px;
+    background-color: #4db3f2;
+    margin: 1rem;
+    box-shadow: 2px 2px 10px 1px rgba(97, 97, 97, 0.3);
+    border-radius: 10px;
+    transition: .3s;
+    font-family: 'Raleway', sans-serif;
+  }
+  #Metodos-De-Pago .contenedor .contenedor-tarjetas .card:hover{
+    box-shadow: 2px 2px 10px 1px rgba(255, 255, 255, 0.3);
+  }
+  #Metodos-De-Pago .contenedor .contenedor-tarjetas .card-icon{
+    font-size: 50px;
+  }
+  #Metodos-De-Pago .contenedor .contenedor-tarjetas .card-text {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #Metodos-De-Pago .contenedor .contenedor-tarjetas .card-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #ddf2ff;
+    color: #4db3f2;
+    margin-left: -10px;
+    width: 12.5rem;
+  }
+  
+  #Metodos-De-Pago .contenedor .contenedor-tarjetas .card-text p {
+    padding-right: 10px;
+
+  }
+  
+  #Metodos-De-Pago .contenedor .contenedor-tarjetas .card-text a {
+    color: #f5cc45;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-right: 5px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s;
+    background-color: #023047;
+    border-radius: 10px;
+  }
+  
+  #Metodos-De-Pago .contenedor .contenedor-tarjetas .card-text a:hover {
+    background-color: #f5cc45;
+    color: #023047;
+  }
+
+/* =============================SECCION MAIN donde estan mis secciones (INICIAR SESION)========== */
+
+/* =============================SECCION MAIN donde estan mis secciones (FOOTER o PIE PAGINA)========== */
+.pie-pagina{
+    width: 100%;
+    background-color: #4E6E81;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #f5cc45;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Major Mono Display', monospace;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #F8F5E4;
+    margin-bottom: 10px;
+    font-family: 'Kalam', cursive;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #F8F5E4;
+    margin: 10px;
+    background-color: #70b8b8;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #023047;
+}
+.pie-pagina .grupo-2{
+    background-color: #ddf2ff;
+    padding: 15px 10px;
+    text-align: center;
+    color: #023047;
+    font-family: 'Sofia', cursive;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+/* @media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+} */
+/* =============================SECCION MAIN donde estan mis secciones (FOOTER o PIE PAGINA)========== */
+
+
+
+
+@media (max-width:1100px){
+    .main .Descripcion {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        padding-right: 10rem;
+    }
+    .main .Descripcion {
+        padding-top: 2rem;
+    }
+    .main .Descripcion .descrip-img p{
+        color: #F8F5E4;
+    }
+
+    .main .Descripcion .descrip-img a{
+        background-color: #F8F5E4;
+        color: #4E6E81;
+        border-bottom-style:none ;
+        border-top-style:none ;
+        border-radius: 5px;
+    }
+    #InicioSesion form{
+        margin-left: 22rem;
+    }
+}
+@media (max-width:864px) {
+    header{
+
+        display: flex;
+        flex-direction: column;
+    }
+    header .Nav-Menu {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .main .Descripcion {
+        padding-top: 4rem;
+        
+    }
+    #Servicios{
+        padding-top: 20px;
+    }
+    #Servicios .Contenedor-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 43rem;
+    }
+    #Servicios .Contenedor-card .card{
+        margin-top: 50px;
+    }
+
+    #Acerca-De{
+        background-image: url(../Recursos/Img/Fondos-Texto/bg-2.svg);
+        background-size:cover;
+    }
+
+    #InicioSesion form{
+        margin-left: 17rem;
+    }
+}
+@media (max-width:717px) {
+   
+    header{
+        position: fixed;
+        right: 0;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .Nav-Menu{
+        position: absolute;
+        top: 7.3rem;
+        left: 0;
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        transform: translateX(-50rem);
+    }
+    header .Nav-Menu a{
+        width: 100%;
+        background-color: #F8F5E4;
+        /* background: linear-gradient(90deg,#c89116, #dbb970, #fce7bf) ; */
+        text-align: center;
+        color: #4E6E81;
+    }
+    header .Nav-Menu .Registrate{
+        border-bottom-style:none ;
+        border-top-style:none ;
+    }
+    header .Nav-Menu .Metodos-De-Pago{
+        color: #4E6E81;
+        border-radius: 0;
+    }
+    header .Nav-Menu a:hover{
+        background-color: rgba(112,184,184,1);   
+        color: #F8F5E4;
+    }
+    header .Nav-Menu .Registrate:hover{
+        color: #F8F5E4;
+        border-radius: 0;
+    }
+    header .Nav-Menu .Metodos-De-Pago:hover{
+        border: none;
+        color: #F8F5E4;
+        background: #6fcd6f;
+    }
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        margin: 1.2rem;
+        cursor: pointer;
+    }
+      .nav-toggle span {
+        width: 40px;
+        height: 5px;
+        background-color: #F8F5E4;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 4px 0;
+        transition: all 0.2s linear;
+      }
+      .close span {
+        transform: rotate(45deg) translate(0px, 0px);
+      }
+    
+      .close span:nth-child(2) {
+        display: none;
+      }
+    
+    .close span:nth-child(3) {
+        transform: rotate(-45deg) translate(-11.5px, 6px);
+      }
+    
+    .open {
+        transform: translateX(0) !important;
+        transition: .4s;
+      }
+    
+    .main{
+        margin-top: 10rem;
+    }
+    .main section {/**Para que todas las secciones esten devajo del encabezado (barra de navegacion)**/
+        scroll-margin-top: 4.5rem;
+    }  
+    #Productos .product-card .card{
+        margin-left: 5.5rem;
+    }
+    #Blog .Blog-Desc .desc{
+        font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Blog .Blog-Conten .blog-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #Blog .Blog-Conten .blog-card .card {
+        margin: 20px;
+        
+    }
+    #Acerca-De{
+        background-image: none;    
+    }
+
+    #Acerca-De .formulario .contenedor .formulario { /*Para que no se ponga mas peque el formulario*/
+        display: flex;
+        flex-wrap: wrap;
+        right: 40px;
+    }
+    #InicioSesion form{
+        margin-left: 13rem;
+    }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+@media (max-width:607px){
+
+    .main .Descripcion .descrip-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main .Descripcion .descrip-img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main .Descripcion .descrip-img p{
+        color: #F8F5E4;
+    }
+    .main .Descripcion .descrip-img a{
+        background-color: #F8F5E4;
+        border-bottom-style:none ;
+        border-top-style:none ;
+        border-radius: 5px;
+    }
+    #InicioSesion form{
+        margin-left: 7rem;
+    }
+}

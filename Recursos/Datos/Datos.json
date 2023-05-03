@@ -1,0 +1,92 @@
+{
+    "portafolios" : [
+        {
+            "id" : 1,
+            "img" : "../Img/Productos/blusa-cachetero1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Con coleres Lindos y guapos",
+            "valor": "1500"
+        },
+         {
+            "id" : 2,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        },
+        {
+            "id" : 3,
+            "img" : "../Img/Productos/bolso1.jpg",
+            "alt" : "Bolso",
+            "nombre" : "Blusa",
+            "parrafo" : "Bolso para llevar tus compras",
+            "valor": "1100"
+        },
+        {
+            "id" : 3,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        },
+        {
+            "id" : 2,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        },
+        {
+            "id" : 2,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        },
+        {
+            "id" : 2,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        },
+        {
+            "id" : 2,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        },
+        {
+            "id" : 2,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        },
+        {
+            "id" : 2,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        },
+        {
+            "id" : 2,
+            "img" : "../Img/Productos/blusa1.jpg",
+            "alt" : "blusa",
+            "nombre" : "Blusa",
+            "parrafo" : "Blusa Slow",
+            "valor": "5000"
+        }
+    ]
+}
